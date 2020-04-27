@@ -1,0 +1,27 @@
+/* Add mobile styles for the component here.  */
+.cardStyle{
+    background-color: white;
+}
+
+.container{
+    background-color: white;
+    margin-right: 10;
+    margin-left: 10;
+    padding: 10;
+}
+
+CardView Label{
+    color: black;
+}
+
+.image{
+    margin-top: 50;
+}
+
+.title{
+    text-decoration: underline;
+}
+
+.redEye{
+    color: red;
+}

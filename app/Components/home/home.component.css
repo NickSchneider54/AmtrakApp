@@ -1,0 +1,31 @@
+.cardStyle{
+    background-color: white;
+}
+
+.calcBtn{
+    margin-top: 20;
+    margin-bottom: 20;
+    padding: 10;
+    font-size: 20;
+    background: rgba(4, 4, 10, 1);
+    height: 55;
+}
+
+.btnWeight{
+    width: 60;
+    height: 60;
+    font-size: 35;
+    background: grey
+}
+
+.container{
+    background-color: white;
+    margin-right: 10;
+    margin-left: 10;
+    padding: 10;
+}
+
+CardView Label{
+    color: black;
+}
+

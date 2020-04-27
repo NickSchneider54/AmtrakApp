@@ -1,0 +1,35 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<FlexboxLayout class="page">
+  <ScrollView class="container" width="96%" orientation="vertical" alignSelf="center" height="100%"> 
+      <StackLayout class="bg-dark" width="100%">
+          <StackLayout height="100">
+            <Image src="~/Assets/Images/logo.png"></Image>  
+          </StackLayout>
+          <CardView class="cardStyle" margin="5" elevation="20" radius="1" height="210">
+              <StackLayout class="nt-form" class="p-20">
+                  <StackLayout class="nt-input">
+                    <Label text="Boarding Time:" class="h1 text-center"></Label>
+                    <TimePicker hour="{{boardingHour}}"
+                      minute="{{boardingMinute}}"
+                      maxHour="23"
+                      maxMinute="59"
+                      minuteInterval="1"
+                      (timeChange)="onTimeChanged($event)">
+                    </TimePicker>           
+                  </StackLayout>
+              </StackLayout>
+            </CardView>
+            
+            <CardView class="cardStyle" margin="10" elevation="20" radius="1" height="230">
+              <StackLayout class="nt-input">
+                  <Label text="Trip Time in Minutes:" class="h1 text-center"></Label>
+                  <Label class="h1 text-center" [text]="getTravelTime()" (tap)="onFocus()" textWrap="true"></Label>                  
+                </StackLayout>
+          </CardView>
+          <Button text="Calculate Travel Time" 
+            class="btn -sky -rounded-sm calcBtn" 
+            elevation="50" (tap)="calculateArrivalTime()">
+          </Button>
+        </StackLayout>
+  </ScrollView>
+</FlexboxLayout>

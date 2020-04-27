@@ -1,0 +1,22 @@
+<FlexboxLayout class="page">
+    <ScrollView class="container" width="96%" orientation="vertical" alignSelf="center" height="100%"> 
+        <StackLayout class="bg-dark" width="100%">
+            <StackLayout height="100">
+              <Image src="~/Assets/Images/logo.png"></Image>  
+            </StackLayout>
+            <CardView class="cardStyle" margin="5" elevation="20" radius="1" height="210">
+                <StackLayout class="nt-form" class="p-20">
+                    <StackLayout class="nt-input">
+                      <Label text="Trip Info:" class="h1 title" textWrap="true"></Label>                      
+                      <Label [text]="boardingTime" class="h2"></Label> 
+                      <Label [text]="tripTime" class="h2"></Label>
+                      <Label *ngIf="redEye" text="Redeye Trip" class="h2 redEye"></Label>  
+                      <Label [text]="arrivalTime" class="h2"></Label>     
+                      <Image *ngIf="redEye" class="image" src="~/Assets/Images/redeye.jpg"></Image>                      
+                    </StackLayout>
+                </StackLayout>
+              </CardView>
+          </StackLayout>
+    </ScrollView>
+  </FlexboxLayout>
+  
